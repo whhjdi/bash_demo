@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale = 1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>布局</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="parent clearfix">
+        <div class="child">logo</div>
+        <button id="button">导航</button>
+        <div class="child">
+            <div class="nav clearfix">
+                <div>导航1</div>
+                <div>导航2</div>
+                <div>导航3</div>
+                <div>导航4</div>
+                <div>导航5</div>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="nav2" id="nav">
+        <div>导航1</div>
+        <div>导航2</div>
+        <div>导航3</div>
+        <div>导航4</div>
+        <div>导航5</div>
+    </div>
+    <div class="banner"></div>
+    <!-- 1.float布局 -->
+    <!-- <div class="pictures ">
+        <div class="wrapper clearfix">
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+        </div>
+    </div> -->
+    <!-- 2.flex布局   -->
+    <!-- <div class="pictures ">
+        <div class="picture"></div>
+        <div class="picture"></div>
+        <div class="picture"></div>
+        <div class="picture"></div>
+        <div class="picture"></div>
+        <div class="picture"></div>
+        <div class="picture"></div>
+        <div class="picture"></div>
+    </div> -->
+    <!-- 3. flex和负margin -->
+    <div class="pictures ">
+        <div class="wrapper">
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+            <div class="picture"></div>
+
+        </div>
+    </div>
+    <!-- 第四部分 float实现 -->
+    <!-- <div class="art clearfix">
+        <div class="side">
+            <div class="ad1">广告1</div>
+        </div>
+        <div class="main">
+            <div class="ad2">广告2</div>
+        </div>
+    </div> -->
+    <div class="art">
+        <div class="side">
+            广告一
+        </div>
+        <div class="main">
+            广告二
+        </div>
+    </div>
+    <script>
+        button.onclick = function () {
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
